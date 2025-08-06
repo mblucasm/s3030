@@ -1,0 +1,10 @@
+*
+
+!include/
+!include/**
+!src/
+!src/**
+!.gitignore
+!LICENSE
+!README.md
+!s3030.c
