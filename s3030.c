@@ -280,17 +280,14 @@ void load_ith_permutation_jth_path(Token *expr, float *ith_perm, uint8_t *paths,
 }
 
 void updatefc(struct fc *haystack, int *len, const float needle) {
-    bool found = false;
     for(int i = 0; i < *len; ++i) {
         if(haystack[i].n == needle) {
             haystack[i].count++;
-            found = true;
+            return;
         }
     }
-    if(!found) {
-        haystack[*len].n = needle;
-        haystack[(*len)++].count = 1;
-    }
+    haystack[*len].n = needle;
+    haystack[(*len)++].count = 1;
 }
 
 uint64_t calc_den(float *nums, int nums_len) {
