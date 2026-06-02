@@ -220,7 +220,7 @@ int main(int argc, char **argv) {
     if(flags & FLAG_s) printf("Search exhausted\n");
     if(flags & FLAG_qm) printf("No\n");
     if(flags & FLAG_h) {
-        if(sols) printf("Total number of solutions: %zu", sols);
+        if(sols) printf("Total number of solutions: %zu\n", sols);
         else printf("No solutions found\n");
     }
     
